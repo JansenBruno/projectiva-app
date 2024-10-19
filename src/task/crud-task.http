@@ -1,0 +1,30 @@
+#### criar
+POST http://localhost:3333/tasks/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZ1bmNpb25hcmFpbzEyIiwic3ViIjoyLCJyb2xlIjoiZW1wbG95ZWUiLCJpYXQiOjE3MjkzMjYzMDUsImV4cCI6MTcyOTMyOTkwNX0.-UprPRQPAIaBgx51zLCC51BT1nLsYL2KfDD5dm_gR1I
+
+{
+    "description": "VAI CARAI",
+    "userId": 9,
+    "squadId": 2,
+    "status": "PENDENTE"
+}
+
+#### pegar todas 
+GET http://localhost:3333/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZ1bmNpb25hcmFpbzEyIiwic3ViIjoyLCJyb2xlIjoiZW1wbG95ZWUiLCJpYXQiOjE3MjkzMjM5MDIsImV4cCI6MTcyOTMyNzUwMn0.Q31E9N30Yq_6Ou_dRw9tbEqJZMXVwRyf1T_bapd20rM
+### 
+GET http://localhost:3333/tasks/1
+Authorization: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZ1bmNpb25hcmFpbzEyIiwic3ViIjo0LCJyb2xlIjoiZW1wbG95ZWUiLCJpYXQiOjE3MjkzMjMyMjEsImV4cCI6MTcyOTMyNjgyMX0.Jye9T214kaSSPZJ05-BdKrp0RTbWRJz6o8FeujaKb9Q
+
+#### atualizar task 
+PUT http://localhost:3000/tasks/1
+Authorization: Bearer <seu_token_jwt>
+Content-Type: application/json
+
+{
+  "description": "Revisar documentação do projeto"
+}
+
+#### 
+DELETE http://localhost:3000/tasks/1
+Authorization: Bearer <seu_token_jwt>
